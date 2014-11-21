@@ -670,7 +670,7 @@ Hence, each page is broken down into three parts:
 		
 		
 		// Print success message
-		addToMessages ("Return Completed Successfully");
+		addToMessages ("Return Completed Successfully - ReturnID: " . $returnId);
 		
 	}
 	
