@@ -1,0 +1,163 @@
+/* 
+	Site Layout
+*/
+
+.container {
+
+}
+
+.sidebar {
+	width: 250px;
+	height: 100%;
+	float: left;
+}
+
+.main {
+	height: 100%;
+	width: calc(100% - 250px);
+	float: right;
+}
+
+.logo {
+	height: 100px;
+	width: 100%;
+	float: left;
+	background-color: #00FF8A;
+	font-size: 6em;
+	text-align:center;
+}
+
+.nav-container {
+	background-color: #222;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	height: calc(100% - 100px);
+	padding: 15px;
+	overflow-y: scroll;
+}
+
+.messages {
+	padding: 5px 0 0 10px;
+	height: 100px;
+	text-align: left;
+	box-shadow: 0 1px 0 #000;
+	overflow-y: scroll;
+}
+
+.messages ul {
+	list-style-type: square;
+    padding-left: 20px;
+	color: red;
+}
+
+.heading {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+tr.blank_row {
+	height: 15px !important;
+}
+
+td.total {
+	font-weight: bold;
+	border-top: 1px solid black;
+}
+
+/*
+	Sidebar Styles
+*/
+
+ul.nav li {
+    text-indent: 20px;
+    line-height: 40px;
+	list-style-type: none;
+}
+
+ul.nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+	background-color: #222;
+	padding-right: 20px;
+}
+
+ul.nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #444;
+}
+
+ul.nav li a:active,
+ul.nav li a:focus {
+    text-decoration: none;
+}
+
+ul.nav > li ul {
+	display: none;
+	position: absolute;
+	left: 250px;
+	margin-top: -40px;
+}
+
+ul.nav > li:hover ul {
+	display: block;
+}
+
+
+
+
+
+/*
+	CSS Reset
+	From: http://meyerweb.com/eric/tools/css/reset/
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table td {
+    padding: 6px;
+	white-space: nowrap;
+}
+
+input, select, button {
+	outline: 1px solid black;	
+	padding:2px;
+}
